@@ -2,7 +2,7 @@
 
 namespace App\Repositories\BaseRepository;
 
-use App\Enums\WebConfig;
+use App\Enums\Configs\WebConfig;
 use Illuminate\Database\Eloquent\Model;
 
 class BaseRepository implements BaseRepositoryInterface

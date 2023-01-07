@@ -1,9 +1,9 @@
 <?php
 use Illuminate\Support\Facades\Storage;
-
+use App\Enums\Configs\WebConfig;
 if (!function_exists('upload_file')) {
 
-    function upload_file($file, $folder = ''): string
+    function upload_file($file, $folder = WebConfig::DefaultUploadPath): string
     {
         return $file->store($folder);
     }
